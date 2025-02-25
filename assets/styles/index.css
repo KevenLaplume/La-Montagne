@@ -85,6 +85,42 @@ body::before {
 header {
   color: rgb(243, 243, 243);
   position: relative;
+  min-width: 100vh;
+}
+header .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px); /* animation */
+  -webkit-animation: headeranime 1.5s forwards;
+          animation: headeranime 1.5s forwards;
+}
+@-webkit-keyframes headeranime {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes headeranime {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 img {
