@@ -1,1 +1,92 @@
-/*# sourceMappingURL=index.css.map */
+@charset "UTF-8";
+/* Font */
+@font-face {
+  font-family: "inter-bold";
+  src: url(../fonts/Inter_18pt-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "merriweather";
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+/* Variables */
+/* Mixin */
+/* Parametre global */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit; /* Hérite la couleur du texte parent */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/******************   SITE GENERAL   **********************/
+body {
+  background: url(../img/bg.jpg) fixed center/cover;
+  text-align: center;
+  font-family: "merriweather", serif;
+  max-width: 1300px;
+  margin: 0 auto;
+  /* animation */
+}
+body::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(17, 17, 17);
+  -webkit-animation: animebefore 1.5s ease forwards;
+          animation: animebefore 1.5s ease forwards;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  pointer-events: none;
+}
+@-webkit-keyframes animebefore {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes animebefore {
+  to {
+    opacity: 0;
+  }
+}
+
+.btn {
+  background: none;
+  border: 2px solid rgb(17, 17, 17);
+  height: 45px;
+  width: 170px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  font-family: "inter-bold", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+header {
+  color: rgb(243, 243, 243);
+  position: relative;
+}
+
+img {
+  width: 50%;
+}/*# sourceMappingURL=index.css.map */

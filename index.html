@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Montagne l'experience absolut</title>
     <link rel="icon" href="">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+<!-- Ceci est un commentaire en HTML -->
+
 <body>
 
     <header>
 
-        <div class="header">
+        <div class="header-content">
             <h1>la montagne <br> ca vous gagne</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Facilis nam vero perferendis, ut rem doloremque!</p>
@@ -24,13 +26,13 @@
         </div>
 
         <nav>
-            <ul>
+            <ul class="nav-left">
                 <li> this is massively</li>
                 <li>generic page</li>
                 <li>elements reference</li>
             </ul>
 
-            <ul>
+            <ul class="nav-right">
                 <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
@@ -42,36 +44,33 @@
 
     <main id="main">
 
-        <div class="date">
-            <p> April 25, 2017</p>
-        </div>
-
         <div class="section1">
+            <span> April 25, 2017</span>
             <h2>and this is a <br> massive headline</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam laudantium impedit dolor molestias
                 facere, ducimus aliquam corporis quae quisquam, optio nostrum quia maxime, iusto quas magnam!</p>
-            <img src="" alt="homme qui saute entre 2 roche">
-            <button>full story</button>
+            <img src="./assets/img/pic01.jpg" alt="homme qui saute entre 2 roche">
+            <button class="btn">full story</button>
         </div>
 
         <div class="section2">
 
             <div class="left">
-                <p>April 24, 2017</p>
+                <span>April 24, 2017</span>
                 <h3>sed magna <br> ipsum faucibus</h3>
-                <img src="" alt="montagne et soleil">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sapiente illo quo consequuntur
                     modi totam, fugiat quia optio ipsam in asperiores inventore.</p>
-                <button>full story</button>
+                <img src="./assets/img/pic02.jpg" alt="montagne et soleil">
+                <button class="btn">full story</button>
             </div>
 
             <div class="right">
-                <p>April 22, 2017</p>
+                <span>April 22, 2017</span>
                 <h3>primis eget <br> imperdiet lorem</h3>
-                <img src="" alt="montagne et soleil">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sapiente illo quo consequuntur
                     modi totam, fugiat quia optio ipsam in asperiores inventore.</p>
-                <button>full story</button>
+                <img src="./assets/img/pic03.jpg" alt="montagne et soleil">
+                <button class="btn">full story</button>
             </div>
 
         </div>
@@ -90,7 +89,9 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message"></textarea>
 
-            <button type="submit">Send Message</button>
+            <div class="submiticontainer">
+                <input type="submit" class="btn" value="send message">
+            </div>
         </form>
 
         <div class="info-container">
