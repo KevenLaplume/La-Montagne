@@ -1,0 +1,124 @@
+
+.main{
+    background: $white1;
+    width: 85%;
+    margin:0 auto;
+
+
+.section1{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+
+
+    span {
+        padding: 60px;
+        position: relative;
+        display: block;
+        width: 100%;  
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            background: $grey1;
+            top: 50%;
+            width: 35%; 
+        }
+
+        &::before {
+            left: 0; /* Positionne la première ligne à gauche */
+        }
+
+        &::after {
+            right: 0; /* Positionne la deuxième ligne à droite */
+        }
+    }
+
+    h2{
+        @include title;
+        font-size: 2.9rem;
+        padding: 0px 0 20px;
+        letter-spacing: 2px;
+    }
+
+    p{
+    font-style: oblique;
+    font-size: 0.7rem;
+    line-height: 2.5;
+    width: 80%;
+    padding: 0 0 30px;// Moins d'espace en haut (0px) et plus d'espace en bas (30px)
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .btn{
+        margin: 40px 0 80px;
+    }
+
+   
+}
+
+.section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid $grey1;
+    cursor: default;
+
+    span{
+        padding: 50px 0 25px;
+        font-size: 0.8rem;
+    }
+
+    img{
+        width: 80%;
+    }
+
+     h3{
+        @include title;
+        font-size: 1rem;
+        padding: 0px 0 20px;
+        letter-spacing: 2.5px;
+        line-height: 1.5;
+    }
+
+    p{
+    font-style: oblique;
+    font-size: 0.7rem;
+    line-height: 2.5;
+    width: 80%;
+    text-align: left;
+    padding: 25px 0 10px;// Moins d'espace en haut (0px) et plus d'espace en bas (30px)
+    }
+
+    .btn{
+        margin: 10px 0 60px;
+    }
+
+
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid $grey1;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+}
+
